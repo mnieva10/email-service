@@ -1,6 +1,6 @@
 @echo off
 
-set loginSource=\\conveydev.com\files\dev\sdlc-ci\development\user\login-funcs-dll\
+set loginSource=C:\Users\Tincho-PC\Desktop\Dev\email-service\libs
 set login_version=v1-0-2
 
 robocopy %loginSource% ..\bin\Win32\Debug LoginFuncs_d32_%login_version%.dll /ZB /X /TEE
