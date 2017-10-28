@@ -1,0 +1,17 @@
+{
+  "name": "generator-template-micro-service",
+  "version": "0.1.0",
+  "description": "",
+  "main": "app/index.js",
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "yeoman-generator": "^0.19.2",
+    "yosay": "^1.0.2"
+  }
+}

@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3F5A3674-8D49-4A06-BF15-46EA4E77B85A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sovos.SvcBus.Common.Model</RootNamespace>
+    <AssemblyName>Sovos.SvcBus.Common.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\bin\Win32\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\bin\Win32\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WIN64</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;WIN64</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Use for Build solution -->
+    <Compile Include="..\..\..\..\__submodules\service-bus-csharp\src\**\*.cs">
+      <Link>Refs\SvcBus\%(FileName)</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\__submodules\dependencies-based-cache-csharp\src\*.cs">
+      <Link>Refs\SvcBus\%(FileName)</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\__submodules\crypt-utility\Model\Services\*.cs">
+      <Link>Refs\CryptUtility\%(FileName)</Link>
+    </Compile>
+    <Compile Include="..\..\..\service-bus-csharp\gc-helper\src\HandleCollection.cs">
+      <Link>Refs\GCHelpers\HandleCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\service-bus-csharp\gc-helper\src\UnManagedObjectContext.cs">
+      <Link>Refs\GCHelpers\UnManagedObjectContext.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\service-bus-csharp\gc-helper\src\UnmanagedObjectGCHelper.cs">
+      <Link>Refs\GCHelpers\UnmanagedObjectGCHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\service-bus-csharp\gc-helper\src\UnmanagedObjectGCHelperExceptions.cs">
+      <Link>Refs\GCHelpers\UnmanagedObjectGCHelperExceptions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\service-bus-csharp\gc-helper\src\UnregistrationAgent.cs">
+      <Link>Refs\GCHelpers\UnregistrationAgent.cs</Link>
+    </Compile>
+    <Compile Include="Capability\AcaXmitEnums.cs" />
+    <Compile Include="Capability\AcaXmitFilter.cs" />
+    <Compile Include="Capability\AppSettings.cs" />
+    <Compile Include="Capability\AuthenticationType.cs" />
+    <Compile Include="Capability\BaseFIleInfo.cs" />
+    <Compile Include="Capability\ClientFeatureType.cs" />
+    <Compile Include="Capability\ClientFeature.cs" />
+    <Compile Include="Capability\CommonMessage.cs" />
+    <Compile Include="Capability\RfmEnums.cs" />
+    <Compile Include="DepCache\DepCacheInvalidatorListener.cs" />
+    <Compile Include="DepCache\DepCacheInvalidatorSender.cs" />
+    <Compile Include="LongRunningJob\ILrjDispatcher.cs" />
+    <Compile Include="LongRunningJob\SvcRequest.cs" />
+    <Compile Include="LongRunningJob\JobEnums.cs" />
+    <Compile Include="Capability\Macroparsing\Request\Request.cs" />
+    <Compile Include="Capability\Macroparsing\Request\RequestScript.cs" />
+    <Compile Include="Capability\Macroparsing\Response\BaseResponse.cs" />
+    <Compile Include="Capability\Macroparsing\Response\BaseResponseScript.cs" />
+    <Compile Include="Capability\Macroparsing\Response\ParsedResponse.cs" />
+    <Compile Include="Capability\Macroparsing\Response\ParsedResponseScript.cs" />
+    <Compile Include="Capability\Macroparsing\Response\PlSqlResponse.cs" />
+    <Compile Include="Capability\Macroparsing\Response\PlSqlResponseScript.cs" />
+    <Compile Include="Capability\RequestProcessingStrategyMessage.cs" />
+    <Compile Include="Exceptions\RequestProcessingStrategyExceptions.cs" />
+    <Compile Include="Infrastructure\Pooling\PooledStream.cs" />
+    <Compile Include="LongRunningJob\JobHandler.cs" />
+    <Compile Include="LongRunningJob\LrjProgress.cs" />
+    <Compile Include="LongRunningJob\LrjRequest.cs" />
+    <Compile Include="MicroserviceConsole\Capability\BsonResponse.cs" />
+    <Compile Include="MicroserviceConsole\Capability\CmdParameter.cs" />
+    <Compile Include="Capability\Constants.cs" />
+    <Compile Include="Capability\DataDto.cs" />
+    <Compile Include="Capability\DestinationDispatcherConfigurable.cs" />
+    <Compile Include="Capability\DIBaseInput.cs" />
+    <Compile Include="Capability\EmailStatus.cs" />
+    <Compile Include="Infrastructure\Logging\FileLoggerConfig.cs" />
+    <Compile Include="Capability\FileTransferType.cs" />
+    <Compile Include="Infrastructure\Logging\LogCodes.cs" />
+    <Compile Include="Capability\MacroParameters.cs" />
+    <Compile Include="Capability\NameValuePair.cs" />
+    <Compile Include="Capability\OraAppSettings.cs" />
+    <Compile Include="Capability\SecurityQuestion.cs" />
+    <Compile Include="Capability\UserProfile.cs" />
+    <Compile Include="Capability\WorkflowMap.cs" />
+    <Compile Include="Capability\WorkflowRequest.cs" />
+    <Compile Include="MicroserviceConsole\Exceptions\CmdInterpreterException.cs" />
+    <Compile Include="Exceptions\CommonExceptions.cs" />
+    <Compile Include="Exceptions\FileSystemServiceException.cs" />
+    <Compile Include="MicroserviceConsole\Exceptions\MessageBuilderException.cs" />
+    <Compile Include="Exceptions\ProcessRunnerException.cs" />
+    <Compile Include="Infrastructure\Pooling\PoolFactoryException.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Infrastructure\Logging\FileLoggerExtensions.cs" />
+    <Compile Include="Extensions\MemoryStreamExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Infrastructure\Pooling\ItemStore.cs" />
+    <Compile Include="Infrastructure\Pooling\Pool.cs" />
+    <Compile Include="Infrastructure\Pooling\Pools.cs" />
+    <Compile Include="Operation\AcaXmit.cs" />
+    <Compile Include="Operation\AcaXmitLogEntry.cs" />
+    <Compile Include="Operation\AcaXmitPause.cs" />
+    <Compile Include="LongRunningJob\BaseJob.cs" />
+    <Compile Include="Operation\Client.cs" />
+    <Compile Include="Operation\Email.cs" />
+    <Compile Include="Operation\Environment.cs" />
+    <Compile Include="LongRunningJob\Job.cs" />
+    <Compile Include="Operation\ProcessResponse.cs" />
+    <Compile Include="Operation\LogEntry.cs" />
+    <Compile Include="Operation\Resource.cs" />
+    <Compile Include="Operation\SecurityAnswer.cs" />
+    <Compile Include="Operation\SettingsData.cs" />
+    <Compile Include="Operation\UserLrj.cs" />
+    <Compile Include="Operation\User.cs" />
+    <Compile Include="Repositories\IAcaXmitRepository.cs" />
+    <Compile Include="Repositories\IEnvironmentRepository.cs" />
+    <Compile Include="Repositories\ILogRepository.cs" />
+    <Compile Include="MicroserviceConsole\CmdInterpreter.cs" />
+    <Compile Include="Repositories\IRfmRepository.cs" />
+    <Compile Include="Repositories\IUserLrjRepository.cs" />
+    <Compile Include="Services\CodeGenerator.cs" />
+    <Compile Include="MicroserviceConsole\ConsoleMicroservice.cs" />
+    <Compile Include="MicroserviceConsole\ConsoleSvcConsumer.cs" />
+    <Compile Include="Infrastructure\Logging\SyncFileLogger.cs" />
+    <Compile Include="Infrastructure\Logging\FileLogger.cs" />
+    <Compile Include="Services\Interfaces\ICodeGenerator.cs" />
+    <Compile Include="Services\Interfaces\IFileSystemService.cs" />
+    <Compile Include="Services\Interfaces\IMacroParTextParser.cs" />
+    <Compile Include="Services\Interfaces\IProcessRunner.cs" />
+    <Compile Include="Services\Interfaces\IRemoteLoggingService.cs" />
+    <Compile Include="Services\Interfaces\IRemoteMicroservice.cs" />
+    <Compile Include="Services\Interfaces\IXmlParserService.cs" />
+    <Compile Include="Services\FileSystemService.cs" />
+    <Compile Include="MicroserviceConsole\JsonFormatter.cs" />
+    <Compile Include="MicroserviceConsole\JsonTypeResolver.cs" />
+    <Compile Include="Services\MacroParTextParser.cs" />
+    <Compile Include="MicroserviceConsole\MessageBuilder.cs" />
+    <Compile Include="Services\ProcessRunner.cs" />
+    <Compile Include="Services\RemoteLoggingService.cs" />
+    <Compile Include="Services\RemoteMicroservice.cs" />
+    <Compile Include="Services\TypeConverter.cs" />
+    <Compile Include="Services\XmlParserService.cs" />
+    <Compile Include="Strategies\DestinationRequestProcessingStrategy.cs" />
+    <Compile Include="Strategies\FileLogRequestStrategy.cs" />
+    <Compile Include="Strategies\FileLogResponseStrategy.cs" />
+    <Compile Include="Strategies\ShortFileLogResponseStrategy.cs" />
+    <Compile Include="Strategies\MutexedRequestProcessingStrategy.cs" />
+    <Compile Include="Strategies\PingRequestStrategy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

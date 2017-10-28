@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8D2C00E-1EC4-49C3-857E-69E354129B39}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>service_bus_tests_net4</RootNamespace>
+    <AssemblyName>service-bus-tests-net4</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\..\bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET_4;WIN64</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>..\..\SvcBus.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\..\..\..\bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NET_4;WIN64</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>..\..\SvcBus.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\..\bin\Win32\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET_4</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>..\..\SvcBus.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\..\..\bin\Win32\Release\</OutputPath>
+    <DefineConstants>TRACE;NET_4</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>..\..\SvcBus.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\NUnit\bin\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\nunit-gteststyle-console-output\src\NUnitGStyleConsoleOutput.cs">
+      <Link>NUnitGStyleConsoleOutput.cs</Link>
+    </Compile>
+    <Compile Include="..\SvcBusAPITests_Class.cs">
+      <Link>SvcBusAPITests_Class.cs</Link>
+    </Compile>
+    <Compile Include="..\SvcBusBsonSerializerTest.cs">
+      <Link>SvcBusBsonSerializerTest.cs</Link>
+    </Compile>
+    <Compile Include="..\SvcBusBsonTests_Class.cs">
+      <Link>SvcBusBsonTests_Class.cs</Link>
+    </Compile>
+    <Compile Include="..\SvcBusConstants.cs">
+      <Link>SvcBusConstants.cs</Link>
+    </Compile>
+    <Compile Include="..\SvcBusConsumerTest_Class.cs">
+      <Link>SvcBusConsumerTest_Class.cs</Link>
+    </Compile>
+    <Compile Include="..\SvcBusDispatcherTest_Class.cs">
+      <Link>SvcBusDispatcherTest_Class.cs</Link>
+    </Compile>
+    <Compile Include="..\SvcBusDispatchInterfaceConsumerPoolTest_Class.cs">
+      <Link>SvcBusDispatchInterfaceConsumerPoolTest_Class.cs</Link>
+    </Compile>
+    <Compile Include="..\SvcBusErrorReportingStub.cs">
+      <Link>SvcBusErrorReportingStub.cs</Link>
+    </Compile>
+    <Compile Include="..\SvcBusExtensionsTest.cs">
+      <Link>SvcBusExtensionsTest.cs</Link>
+    </Compile>
+    <Compile Include="..\SvcBusMessageTest_Class.cs">
+      <Link>SvcBusMessageTest_Class.cs</Link>
+    </Compile>
+    <Compile Include="..\SvcBusMutexTest_Class.cs">
+      <Link>SvcBusMutexTest_Class.cs</Link>
+    </Compile>
+    <Compile Include="..\SvcBusPipeServiceTest_Class.cs">
+      <Link>SvcBusPipeServiceTest_Class.cs</Link>
+    </Compile>
+    <Compile Include="..\SvcBusProducerAndConsumerTest_Class.cs">
+      <Link>SvcBusProducerAndConsumerTest_Class.cs</Link>
+    </Compile>
+    <Compile Include="..\SvcBusProducerTest_Class.cs">
+      <Link>SvcBusProducerTest_Class.cs</Link>
+    </Compile>
+    <Compile Include="..\SvcBusResponderTest_Class.cs">
+      <Link>SvcBusResponderTest_Class.cs</Link>
+    </Compile>
+    <Compile Include="..\SvcBusServiceTest_Class.cs">
+      <Link>SvcBusServiceTest_Class.cs</Link>
+    </Compile>
+    <Compile Include="..\SvcBusStatsCollectorTest_Class.cs">
+      <Link>SvcBusStatsCollectorTest_Class.cs</Link>
+    </Compile>
+    <Compile Include="..\SvcBusWinApiThreadPoolTests.cs">
+      <Link>SvcBusWinApiThreadPoolTests.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\service-bus-csharp-model.csproj">
+      <Project>{0467ea97-c6b2-4296-b987-e52525c13947}</Project>
+      <Name>service-bus-csharp-model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

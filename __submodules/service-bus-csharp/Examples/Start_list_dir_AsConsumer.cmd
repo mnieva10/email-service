@@ -1,0 +1,1 @@
+..\..\..\bin\win32\release\list-dir-example-csharp.exe mongodb://localhost:27017/testdb

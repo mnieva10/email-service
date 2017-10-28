@@ -1,0 +1,20 @@
+[submodule "__submodules/service-bus-csharp"]
+	path = __submodules/service-bus-csharp
+	url = git@github.com:Convey-Compliance/service-bus-csharp.git
+	branch = v2
+[submodule "__submodules/mybatis-mybatisnet"]
+	path = __submodules/mybatis-mybatisnet
+	url = git@bucket.convey.com:Convey/mybatis-mybatisnet.git
+	branch = convey-ibatis-1-maintenance
+[submodule "__submodules/Castle.Core-READONLY"]
+	path = __submodules/Castle.Core-READONLY
+	url = git@github.com:Convey-Compliance/Castle.Core-READONLY.git
+	branch = master
+[submodule "__submodules/svcbus-common-model"]
+	path = __submodules/svcbus-common-model
+	url = git@bucket.convey.com:Convey/svcbus-common-model.git
+	branch = development
+[submodule "__submodules/crypt-utility"]
+	path = __submodules/crypt-utility
+	url = git@bucket.convey.com:Convey/crypt-utility.git
+	branch = development

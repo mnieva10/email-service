@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<configuration>
+  <configSections>
+    <section name="fileLoggerConfig" type="Sovos.SvcBus.Common.Model.Infrastructure.Logging.FileLoggerConfig, <%= dispatch %>"/>
+  </configSections>
+  <appSettings>
+    <add key="iBatis.ConnectionString" value="<%%= @context['IBATISCS'] %>" />
+    <add key="iBatis.Config" value="config\sqlMap.config" />
+    <add key="MongoDB.ConnectionString" value=" <%%= @context['MONGOCS'] %>" />
+    <add key="ServiceName" value=" <%%= @context['ServiceName'] %>" />
+
+    <add key="QueueMode" value=" <%%= @context['QueueMode'] %>" />
+    <add key="DispatchMode" value=" <%%= @context['DispatchMode'] %>" />
+    <add key="MinThreads" value=" <%%= @context['MinThreads'] %>" />
+    <add key="MaxThreads" value=" <%%= @context['MaxThreads'] %>" />
+    <add key="ThreadCount" value=" <%%= @context['ThreadCount'] %>" />
+
+  </appSettings>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2"/>
+  </startup>
+  <fileLoggerConfig targetFile=" <%%= @context['LOGFILE'] %>" logLevel=" <%%= @context['LOGLEVEL'] %>" maxLogFiles=" <%%= @context['MAXLOGFILES'] %>" />
+</configuration>

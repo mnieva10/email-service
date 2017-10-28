@@ -1,0 +1,4 @@
+start ..\..\..\bin\win32\release\service-example-csharp.exe mongodb://localhost:27018,localhost:27019,localhost:27020/testdb?replicaSet=service-bus "service_durable" DURABLE wait
+start ..\..\..\bin\win32\release\service-example-csharp.exe mongodb://localhost:27018,localhost:27019,localhost:27020/testdb?replicaSet=service-bus "service_durable" DURABLE wait
+start ..\..\..\bin\win32\release\service-example-csharp.exe mongodb://localhost:27018,localhost:27019,localhost:27020/testdb?replicaSet=service-bus "service_durable" DURABLE wait
+start ..\..\..\bin\win32\release\service-example-csharp.exe mongodb://localhost:27018,localhost:27019,localhost:27020/testdb?replicaSet=service-bus "service_durable" DURABLE wait

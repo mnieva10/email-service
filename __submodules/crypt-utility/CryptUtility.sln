@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{36D00EB4-01C3-4204-A063-568FF5F28D58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelUT", "ModelUT\ModelUT.csproj", "{66A87876-CACB-4A72-B147-2C4B421AAEA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36D00EB4-01C3-4204-A063-568FF5F28D58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36D00EB4-01C3-4204-A063-568FF5F28D58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36D00EB4-01C3-4204-A063-568FF5F28D58}.Debug|x86.ActiveCfg = Debug|x86
+		{36D00EB4-01C3-4204-A063-568FF5F28D58}.Debug|x86.Build.0 = Debug|x86
+		{36D00EB4-01C3-4204-A063-568FF5F28D58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36D00EB4-01C3-4204-A063-568FF5F28D58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36D00EB4-01C3-4204-A063-568FF5F28D58}.Release|x86.ActiveCfg = Release|x86
+		{36D00EB4-01C3-4204-A063-568FF5F28D58}.Release|x86.Build.0 = Release|x86
+		{66A87876-CACB-4A72-B147-2C4B421AAEA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66A87876-CACB-4A72-B147-2C4B421AAEA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66A87876-CACB-4A72-B147-2C4B421AAEA1}.Debug|x86.ActiveCfg = Debug|x86
+		{66A87876-CACB-4A72-B147-2C4B421AAEA1}.Debug|x86.Build.0 = Debug|x86
+		{66A87876-CACB-4A72-B147-2C4B421AAEA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66A87876-CACB-4A72-B147-2C4B421AAEA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66A87876-CACB-4A72-B147-2C4B421AAEA1}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,226 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{a5851f74-33f7-4bba-bcd3-324316e03d3b}</ProjectGuid>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+        <DCC_DependencyCheckOutputName>..\..\..\..\bin\Win32\Debug\ModelUT_XE4.exe</DCC_DependencyCheckOutputName>
+        <MainSource>ModelUT_XE4.dpr</MainSource>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <TargetedPlatforms>3</TargetedPlatforms>
+        <AppType>Application</AppType>
+        <FrameworkType>VCL</FrameworkType>
+        <ProjectVersion>17.2</ProjectVersion>
+        <Platform Condition="'$(Platform)'==''">Win64</Platform>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win64)'!=''">
+        <Cfg_1_Win64>true</Cfg_1_Win64>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win64)'!=''">
+        <Cfg_2_Win64>true</Cfg_2_Win64>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <DCC_IMPLICIT_STRING_CAST>false</DCC_IMPLICIT_STRING_CAST>
+        <DCC_UnitSearchPath>$(BDS)\Source\dUnit\src;..\..\..\dunitgroup-dunit\Contrib\XMLReporting;..\Model\Services;..\Model\Capability;..\Model\DepCache;..\..\..\service-bus-delphi\src;..\..\..\convey-private-libs;..\..\..\convey-public-libs;..\..\..\mongoc-wrapper-delphi\src;..\..\..\convey-private-libs\jcl;..\..\..\superobject;..\..\..\tries;$(BDS)\Lib;$(BDS)\source\;..\..\..\dependencies-based-cache-delphi\src;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_Define>OnDemandMongoCLoad;OnDemandLibbsonLoad;OnDemandSvcBusLoad;STANDARD_DUNIT;MacroEnterprise;Enterprise;$(DCC_Define)</DCC_Define>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;DUnitX;Winapi;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <SanitizedProjectName>ModelUT_XE4</SanitizedProjectName>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <DCC_DcuOutput>..\..\..\..\intermediate\Win32_XE8\$(Config)</DCC_DcuOutput>
+        <DCC_ExeOutput>..\..\..\..\bin\Win32\$(Config)</DCC_ExeOutput>
+        <DCC_Namespace>System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <DCC_ExeOutput>..\..\..\..\bin\x64\$(Config)</DCC_ExeOutput>
+        <DCC_DcuOutput>..\..\..\..\intermediate\x64\$(Config)</DCC_DcuOutput>
+        <DCC_Namespace>System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_DebugInformation>false</DCC_DebugInformation>
+        <Version>7.0</Version>
+        <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_ObjOutput>..\..\..\..\intermediate\Win32\Release</DCC_ObjOutput>
+        <DCC_HppOutput>..\..\..\..\intermediate\Win32\Release</DCC_HppOutput>
+        <DCC_ResourcePath>$(BDS)\Source\dUnit\src;..\..\..\dunitgroup-dunit\Contrib\XMLReporting;..\Model\Services;..\Model\Capability;..\..\..\service-bus-delphi\src;..\..\..\convey-private-libs;..\..\..\convey-public-libs;..\..\..\mongoc-wrapper-delphi\src;..\..\..\convey-private-libs\jcl;..\..\..\superobject;..\..\..\tries;$(BDS)\Lib;$(DCC_ResourcePath)</DCC_ResourcePath>
+        <DCC_ObjPath>$(BDS)\Source\dUnit\src;..\..\..\dunitgroup-dunit\Contrib\XMLReporting;..\Model\Services;..\Model\Capability;..\..\..\service-bus-delphi\src;..\..\..\convey-private-libs;..\..\..\convey-public-libs;..\..\..\mongoc-wrapper-delphi\src;..\..\..\convey-private-libs\jcl;..\..\..\superobject;..\..\..\tries;$(BDS)\Lib;$(DCC_ObjPath)</DCC_ObjPath>
+        <DCC_IncludePath>$(BDS)\Source\dUnit\src;..\..\..\dunitgroup-dunit\Contrib\XMLReporting;..\Model\Services;..\Model\Capability;..\..\..\service-bus-delphi\src;..\..\..\convey-private-libs;..\..\..\convey-public-libs;..\..\..\mongoc-wrapper-delphi\src;..\..\..\convey-private-libs\jcl;..\..\..\superobject;..\..\..\tries;$(BDS)\Lib;$(DCC_IncludePath)</DCC_IncludePath>
+        <DCC_SYMBOL_DEPRECATED>False</DCC_SYMBOL_DEPRECATED>
+        <DCC_SYMBOL_LIBRARY>False</DCC_SYMBOL_LIBRARY>
+        <DCC_SYMBOL_PLATFORM>False</DCC_SYMBOL_PLATFORM>
+        <DCC_SYMBOL_EXPERIMENTAL>False</DCC_SYMBOL_EXPERIMENTAL>
+        <DCC_UNIT_LIBRARY>False</DCC_UNIT_LIBRARY>
+        <DCC_UNIT_PLATFORM>False</DCC_UNIT_PLATFORM>
+        <DCC_UNIT_DEPRECATED>False</DCC_UNIT_DEPRECATED>
+        <DCC_UNIT_EXPERIMENTAL>False</DCC_UNIT_EXPERIMENTAL>
+        <DCC_TYPEINFO_IMPLICITLY_ADDED>False</DCC_TYPEINFO_IMPLICITLY_ADDED>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <Version>7.0</Version>
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+        <DCC_ResourcePath>$(BDS)\Source\dUnit\src;..\..\..\dunitgroup-dunit\Contrib\XMLReporting;..\Model\Services;..\Model\Capability;..\..\..\service-bus-delphi\src;..\..\..\convey-private-libs;..\..\..\convey-public-libs;..\..\..\mongoc-wrapper-delphi\src;..\..\..\convey-private-libs\jcl;..\..\..\superobject;..\..\..\tries;$(BDS)\Lib;..\..\..\dependencies-based-cache-delphi\src;$(DCC_ResourcePath)</DCC_ResourcePath>
+        <DCC_ObjPath>$(BDS)\Source\dUnit\src;..\..\..\dunitgroup-dunit\Contrib\XMLReporting;..\Model\Services;..\Model\Capability;..\..\..\service-bus-delphi\src;..\..\..\convey-private-libs;..\..\..\convey-public-libs;..\..\..\mongoc-wrapper-delphi\src;..\..\..\convey-private-libs\jcl;..\..\..\superobject;..\..\..\tries;$(BDS)\Lib;..\..\..\dependencies-based-cache-delphi\src;$(DCC_ObjPath)</DCC_ObjPath>
+        <DCC_IncludePath>$(BDS)\Source\dUnit\src;..\..\..\dunitgroup-dunit\Contrib\XMLReporting;..\Model\Services;..\Model\Capability;..\..\..\service-bus-delphi\src;..\..\..\convey-private-libs;..\..\..\convey-public-libs;..\..\..\mongoc-wrapper-delphi\src;..\..\..\convey-private-libs\jcl;..\..\..\superobject;..\..\..\tries;$(BDS)\Lib;..\..\..\dependencies-based-cache-delphi\src;$(DCC_IncludePath)</DCC_IncludePath>
+        <DCC_ObjOutput>..\..\..\..\intermediate\Win32\Debug</DCC_ObjOutput>
+        <DCC_HppOutput>..\..\..\..\intermediate\Win32\Debug</DCC_HppOutput>
+        <DCC_Optimize>False</DCC_Optimize>
+        <DCC_SYMBOL_DEPRECATED>False</DCC_SYMBOL_DEPRECATED>
+        <DCC_SYMBOL_LIBRARY>False</DCC_SYMBOL_LIBRARY>
+        <DCC_SYMBOL_PLATFORM>False</DCC_SYMBOL_PLATFORM>
+        <DCC_SYMBOL_EXPERIMENTAL>False</DCC_SYMBOL_EXPERIMENTAL>
+        <DCC_UNIT_LIBRARY>False</DCC_UNIT_LIBRARY>
+        <DCC_UNIT_PLATFORM>False</DCC_UNIT_PLATFORM>
+        <DCC_UNIT_DEPRECATED>False</DCC_UNIT_DEPRECATED>
+        <DCC_UNIT_EXPERIMENTAL>False</DCC_UNIT_EXPERIMENTAL>
+        <DCC_TYPEINFO_IMPLICITLY_ADDED>False</DCC_TYPEINFO_IMPLICITLY_ADDED>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+    </PropertyGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Parameters>
+                    <Parameters Name="UseLauncher">False</Parameters>
+                    <Parameters Name="LoadAllSymbols">True</Parameters>
+                    <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+                </Parameters>
+                <VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+                    <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+                    <VersionInfo Name="MajorVer">1</VersionInfo>
+                    <VersionInfo Name="MinorVer">0</VersionInfo>
+                    <VersionInfo Name="Release">0</VersionInfo>
+                    <VersionInfo Name="Build">0</VersionInfo>
+                    <VersionInfo Name="Debug">False</VersionInfo>
+                    <VersionInfo Name="PreRelease">False</VersionInfo>
+                    <VersionInfo Name="Special">False</VersionInfo>
+                    <VersionInfo Name="Private">False</VersionInfo>
+                    <VersionInfo Name="DLL">False</VersionInfo>
+                    <VersionInfo Name="Locale">1033</VersionInfo>
+                    <VersionInfo Name="CodePage">1252</VersionInfo>
+                </VersionInfo>
+                <VersionInfoKeys>
+                    <VersionInfoKeys Name="CompanyName"/>
+                    <VersionInfoKeys Name="FileDescription"/>
+                    <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="InternalName"/>
+                    <VersionInfoKeys Name="LegalCopyright"/>
+                    <VersionInfoKeys Name="LegalTrademarks"/>
+                    <VersionInfoKeys Name="OriginalFilename"/>
+                    <VersionInfoKeys Name="ProductName"/>
+                    <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="Comments"/>
+                </VersionInfoKeys>
+                <Source>
+                    <Source Name="MainSource">ModelUT_XE4.dpr</Source>
+                </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k180.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp180.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
+            </Delphi.Personality>
+            <Platforms>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">True</Platform>
+            </Platforms>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="..\..\..\dunitgroup-dunit\convey-src\uCnvDunitUtilities.pas"/>
+        <DCCReference Include="..\..\..\dunitgroup-dunit\src\GTestStyleTestRunner.pas"/>
+        <DCCReference Include="Services\uDestinationDispatcherConfigurableTest.pas"/>
+        <DCCReference Include="..\model\Capability\uDestinationDispatcherConfigurable.pas"/>
+        <DCCReference Include="..\model\services\uConsoleMicroservice.pas"/>
+        <DCCReference Include="..\model\services\uFileLogger.pas"/>
+        <DCCReference Include="..\model\Strategies\uDestinationRequestProcessingStrategy.pas"/>
+        <DCCReference Include="..\model\Strategies\uPingRequestStrategy.pas"/>
+        <DCCReference Include="Services\uPingRequestStrategyTest.pas"/>
+        <DCCReference Include="Services\uTestUsingDispatcher.pas"/>
+        <DCCReference Include="..\model\services\uCmdInterpreter.pas"/>
+        <DCCReference Include="Services\uCmdInterpreterTest.pas"/>
+        <DCCReference Include="..\model\Extensions\uStringExtensions.pas"/>
+        <DCCReference Include="Extensions\uStringExtensionsTest.pas"/>
+        <DCCReference Include="Services\uMutexedRequestProcessingStrategyTest.pas"/>
+        <DCCReference Include="..\model\Strategies\uMutexedRequestProcessingStrategy.pas"/>
+        <DCCReference Include="..\model\services\uLogFileStream.pas"/>
+        <DCCReference Include="Services\uLogFileStreamTest.pas"/>
+        <DCCReference Include="DepCache\uDepCacheInvalidatorTest.pas"/>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+</Project>

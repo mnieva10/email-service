@@ -1,0 +1,1 @@
+start ..\..\..\bin\win32\release\service-example-csharp-dispatcher.exe mongodb://localhost:27017/testdb "service_volatile" VOLATILE producer use_bin_data
